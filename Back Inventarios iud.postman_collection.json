@@ -1,0 +1,834 @@
+{
+	"info": {
+		"_postman_id": "326b8103-d365-45dd-98de-5debb53f2096",
+		"name": "Back Inventarios iud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23463957"
+	},
+	"item": [
+		{
+			"name": "Tipo de equipo",
+			"item": [
+				{
+					"name": "Crear tipo equipo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Todo en uno\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/tipoequipos",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tipoequipos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar tipos de equipo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/tipoequipos?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tipoequipos"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar tipo equipo por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/tipoequipos/6395539420a3b1a7d4a1bf14",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tipoequipos",
+								"6395539420a3b1a7d4a1bf14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar tipo equipo por ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"estado\": true,\r\n    \"nombre\": \"Ups\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/tipoequipos/639553a320a3b1a7d4a1bf17",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tipoequipos",
+								"639553a320a3b1a7d4a1bf17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar tipo equipo por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/tipoequipos/639553a320a3b1a7d4a1bf17",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tipoequipos",
+								"639553a320a3b1a7d4a1bf17"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estado de estado",
+			"item": [
+				{
+					"name": "Crear tipo estado",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Prestamo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/estados",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar tipos estado",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/estados?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estados"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar tipo estado por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/estados/639554d220a3b1a7d4a1bf21",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estados",
+								"639554d220a3b1a7d4a1bf21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar tipo estado por ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Depreciado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/estados/639554e120a3b1a7d4a1bf24",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estados",
+								"639554e120a3b1a7d4a1bf24"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar tipo estado por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/estados/639554d220a3b1a7d4a1bf21",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estados",
+								"639554d220a3b1a7d4a1bf21"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Crear nuevo usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Carlos Mira\",\r\n    \"email\": \"carlos.mira@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\":\"DOCENTE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Todos los usuarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/usuarios?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar usuario por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/usuarios/6395529131755263c6e9f7ea",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios",
+								"6395529131755263c6e9f7ea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar usuario por ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Carlos Mira Morales\",\r\n    \"email\": \"carlos.mira@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\":\"DOCENTE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/usuarios/63955dc120a3b1a7d4a1bf30",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios",
+								"63955dc120a3b1a7d4a1bf30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar usuario por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/usuarios/6395529131755263c6e9f7ea",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios",
+								"6395529131755263c6e9f7ea"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Marcas",
+			"item": [
+				{
+					"name": "Crear marca",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Samsung\",\r\n    \"estado\": \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/marcas",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"marcas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todas las marcas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/marcas?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"marcas"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar marca por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/marcas/63955eac20a3b1a7d4a1bf38",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"marcas",
+								"63955eac20a3b1a7d4a1bf38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar marca por ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Compumax\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/marcas/63955eac20a3b1a7d4a1bf38",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"marcas",
+								"63955eac20a3b1a7d4a1bf38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar marca por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/marcas/63955eac20a3b1a7d4a1bf38",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"marcas",
+								"63955eac20a3b1a7d4a1bf38"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inventario",
+			"item": [
+				{
+					"name": "Crear inventario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serial\": \"1111-1111-1115\",\r\n    \"modelo\": \"2020\",\r\n    \"descripcion\": \"\",\r\n    \"foto_equipo\": \"\",\r\n    \"color\": \"\",\r\n    \"fecha_compra\": \"02-08-2022\",\r\n    \"precio\": \"700\",\r\n    \"usuario\": {\r\n        \"_id\": \"6395529131755263c6e9f7ea\"\r\n    },\r\n    \"marca\": {\r\n        \"_id\": \"63955eac20a3b1a7d4a1bf38\"\r\n    },\r\n    \"estado_equipo\": {\r\n        \"_id\": \"639554e120a3b1a7d4a1bf24\"\r\n    },\r\n    \"tipo_equipo\": {\r\n        \"_id\": \"639553a320a3b1a7d4a1bf17\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/inventarios",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"inventarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todos lo inventarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/inventarios?estado=true",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"inventarios"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar inventario por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/inventarios/6395616420a3b1a7d4a1bf49",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"inventarios",
+								"6395616420a3b1a7d4a1bf49"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar inventario  por ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serial\": \"1111-1111-1110\",\r\n    \"modelo\": \"2020\",\r\n    \"descripcion\": \"\",\r\n    \"foto_equipo\": \"\",\r\n    \"color\": \"\",\r\n    \"fecha_compra\": \"02-08-2022\",\r\n    \"precio\": \"700\",\r\n    \"usuario\": {\r\n        \"_id\": \"6395529131755263c6e9f7ea\"\r\n    },\r\n    \"marca\": {\r\n        \"_id\": \"63955eac20a3b1a7d4a1bf38\"\r\n    },\r\n    \"estado_equipo\": {\r\n        \"_id\": \"639554e120a3b1a7d4a1bf24\"\r\n    },\r\n    \"tipo_equipo\": {\r\n        \"_id\": \"639553a320a3b1a7d4a1bf17\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/inventarios/6395616420a3b1a7d4a1bf49",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"inventarios",
+								"6395616420a3b1a7d4a1bf49"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar inventario  por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1NTI0ZjMxNzU1MjYzYzZlOWY3ZTciLCJub21icmUiOiJKVUFOIERBVklEIE1BWUEiLCJlbWFpbCI6IkpVQU5EQVZJRE1BWUExOUBHTUFJTC5DT00iLCJyb2wiOiJBRE1JTiIsImlhdCI6MTY3MDczMDUyOSwiZXhwIjoxNjcwNzczNzI5fQ.bixwQBMfEalNMqaB9TiBogikY-y5FdlcKYgQlKtOOaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/inventarios/6395616420a3b1a7d4a1bf49",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"inventarios",
+								"6395616420a3b1a7d4a1bf49"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Inicio de sección",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"juandavidmaya19@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "5000"
+		}
+	]
+}
